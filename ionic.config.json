@@ -1,0 +1,7 @@
+{
+  "name": "RecetasMedicas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
