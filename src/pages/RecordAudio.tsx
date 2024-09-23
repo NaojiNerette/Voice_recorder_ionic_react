@@ -71,8 +71,11 @@ const RecordAudio: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-          <IonButton onClick={stopRecording}>Detener Grabación</IonButton>
-          <IonButton onClick={startRecording}>Iniciar Grabación</IonButton>
+        {isRecording ? (
+          <IonButton expand="block" onClick={stopRecording}>Detener Grabación</IonButton>
+        ) : (
+          <IonButton expand="block" onClick={startRecording}>Iniciar Grabación</IonButton>
+        )}
         {audioURL && (
           <div>
             <IonText>Grabación guardada</IonText>
